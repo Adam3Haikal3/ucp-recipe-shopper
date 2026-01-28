@@ -1,9 +1,11 @@
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import httpx
 import logging
 from typing import List, Optional
+import os
 
 app = FastAPI(title="UCP Recipe Agent")
 
@@ -15,6 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# API Routes first
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -90,6 +93,13 @@ async def shop_for_recipe(request: ShopRequest):
         missing_items=missing_products,
         total_cost=total_cost
     )
+
+# Serve Frontend Static Files (Must be after API routes so /api isn't overwritten)
+# We assume 'frontend' folder is in the project root (../frontend relative to this file's execution context if run from root)
+if os.path.exists("frontend"):
+    app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
+elif os.path.exists("../frontend"):
+     app.mount("/", StaticFiles(directory="../frontend", html=True), name="static")
 
 if __name__ == "__main__":
     import uvicorn

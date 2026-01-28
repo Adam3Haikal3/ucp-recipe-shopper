@@ -8,7 +8,7 @@ const totalCost = document.getElementById('totalCost');
 const missingSection = document.getElementById('missingSection');
 const missingList = document.getElementById('missingList');
 
-const AGENT_API = "http://localhost:8000/api/shop";
+const AGENT_API = "/api/shop"; // Use relative path so it works on any domain/port match
 
 btn.addEventListener('click', async () => {
     const recipe = input.value.trim();
