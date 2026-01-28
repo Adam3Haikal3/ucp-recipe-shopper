@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+# Environment
+.venv/
+venv/
+ENV/
+env/
+# Custom Data (Keep the CSVs, but maybe ignore local DBs if we want clean state on server)
+# But for this simple PoC, ignoring DBs is good so they regenerate clean from CSVs on deploy.
+*.db
+*.db-shm
+*.db-wal
+# Logs
+*.log
+# IDE
+.vscode/
+.idea/
+.DS_Store

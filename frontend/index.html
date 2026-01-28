@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP Recipe Shopper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UCP Recipe Shopper</h1>
+            <p>Turn your recipes into a shopping list instantly.</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="recipeInput" placeholder="Enter your recipe here (e.g., '2 eggs, 1 cup milk, and flour')"></textarea>
+                <button id="shopBtn">Find Best Deals</button>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Searching UCP Network...</p>
+            </div>
+
+            <div id="results" class="hidden">
+                <div class="summary-card">
+                    <h3>Shopping List Summary</h3>
+                    <p>Total items found: <span id="itemCount">0</span></p>
+                    <div class="total-price">
+                        Total Cost: <span id="totalCost">$0.00</span>
+                    </div>
+                </div>
+
+                <div id="productsGrid" class="products-grid">
+                    <!-- Products will be injected here -->
+                </div>
+
+                <div id="missingSection" class="hidden">
+                    <h3>Missing Items</h3>
+                    <ul id="missingList"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

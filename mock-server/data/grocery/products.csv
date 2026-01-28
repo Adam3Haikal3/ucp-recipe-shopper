@@ -1,0 +1,12 @@
+id,title,description,price,currency,quantity,category,brand,image_url,attributes
+prod_1,Whole Milk,Organic Whole Milk 1 Gallon,599,USD,100,Dairy,FarmFresh,https://example.com/milk.jpg,{"fat": "whole", "organic": "true"}
+prod_2,Eggs,Large Brown Eggs 1 Dozen,450,USD,150,Dairy,FarmFresh,https://example.com/eggs.jpg,{"size": "large", "color": "brown"}
+prod_3,All-Purpose Flour,5lb Bag,399,USD,80,Pantry,BakerBest,https://example.com/flour.jpg,{"type": "all-purpose"}
+prod_4,Sugar,Granulated Sugar 4lb,349,USD,90,Pantry,SweetLife,https://example.com/sugar.jpg,{"type": "granulated"}
+prod_5,Butter,Salted Butter 1lb,499,USD,120,Dairy,FarmFresh,https://example.com/butter.jpg,{"type": "salted"}
+prod_6,Bananas,Organic Bananas Bunch,199,USD,200,Produce,NatureChoice,https://example.com/bananas.jpg,{"organic": "true"}
+prod_7,Strawberries,Fresh Strawberries 1lb,399,USD,50,Produce,BerryFarm,https://example.com/strawberries.jpg,{}
+prod_8,Pancake Mix,Buttermilk Pancake Mix,499,USD,60,Pantry,BreakfastClub,https://example.com/pancake_mix.jpg,{}
+prod_9,Maple Syrup,Pure Grade A Maple Syrup,899,USD,40,Pantry,VermontGold,https://example.com/syrup.jpg,{"grade": "A"}
+prod_10,Onions,Yellow Onions 3lb Bag,299,USD,60,Produce,FreshField,https://example.com/onions.jpg,{}
+prod_11,Bread,Whole Wheat Bread Loaf,349,USD,50,Bakery,BakerBest,https://example.com/bread.jpg,{"type": "whole wheat"}

@@ -1,0 +1,10 @@
+product_id,location_id,quantity,status
+prod_1,store_001,50,IN_STOCK
+prod_2,store_001,75,IN_STOCK
+prod_3,store_001,40,IN_STOCK
+prod_4,store_001,45,IN_STOCK
+prod_5,store_001,60,IN_STOCK
+prod_6,store_001,100,IN_STOCK
+prod_7,store_001,25,IN_STOCK
+prod_8,store_001,30,IN_STOCK
+prod_9,store_001,20,IN_STOCK
